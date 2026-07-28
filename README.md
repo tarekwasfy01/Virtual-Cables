@@ -14,6 +14,13 @@ Virtual Cables takes a different approach from traditional virtual audio cable s
 - Add or remove cables from the application
 - Independent audio buffer for every cable
 - No emulation of proprietary audio hardware
+## Download
+
+https://github.com/tarekwasfy01/Virtual-Cables/releases/download/Virtual-Cables/Virtual_Cables_Setup.exe
+
+## Screenshot
+<img width="1672" height="941" alt="20304bb4-cba7-4469-8885-7f50a109aebb" src="https://github.com/user-attachments/assets/a2d98d24-f90b-4613-b008-179fd79dc94f" />
+
 <img width="801" height="526" alt="Screenshot 2026-07-28 064309" src="https://github.com/user-attachments/assets/d4fd1b6e-2ecc-4192-b10e-92e59e491922" />
 ## How It Works
 
