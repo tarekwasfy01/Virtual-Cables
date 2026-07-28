@@ -69,20 +69,6 @@ Virtual Cables does not imitate MOTU, Realtek, or other proprietary hardware and
 
 The application exports standards-based USB Audio Class devices. Windows supplies its built-in USB audio class driver, while the separately installed USB/IP driver provides the virtual USB transport.
 
-## Building from Source
-
-Requirements:
-
-- Go 1.22 or newer
-- Windows 10 or Windows 11 x64
-
-Run:
-
-```text
-BUILD_VIRTUAL_CABLES.bat
-```
-
-The build process runs the automated tests, creates the Windows executable, performs a self-test, and prepares the complete release folder.
 
 ## Project Status
 
