@@ -2,7 +2,7 @@
 # Virtual Cables
 
 Virtual Cables takes a different approach from traditional virtual audio cable software. Instead of installing a custom audio kernel driver, it creates virtual USB Audio Class devices through USB/IP. Windows can then use its built-in USB audio driver to expose them as standard playback and recording devices.
-
+This driver is used: https://github.com/vadimgrn/usbip-win2
 ## Features
 
 - Create up to 32 independent virtual audio cables
