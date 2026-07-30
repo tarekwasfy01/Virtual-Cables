@@ -71,9 +71,7 @@ The destination application will receive the audio stream from the matching cabl
 
 ## Driver Model
 
-Virtual Cables does not imitate MOTU, Realtek, or other proprietary hardware and does not reuse their drivers.
-
-The application exports standards-based USB Audio Class devices. Windows supplies its built-in USB audio class driver, while the separately installed USB/IP driver provides the virtual USB transport.
+The application exports standards-based USB Audio Class devices. Windows supplies its built-in USB audio class driver, while the separately installed USB/IP driver provides the virtual USB transport. This driver is used: https://github.com/vadimgrn/usbip-win2
 
 
 ## Project Status
