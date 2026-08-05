@@ -3,10 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Virtual Cables creates up to 32 virtual USB audio loopback devices on Windows through USB/IP.">
+  <meta name="description" content="Download virtual audio and MIDI cable apps for Windows from Microsoft Store, including Virtual Driverless Hi-Fi Cable, Virtual Driverless MIDI Cables and Virtual Cables from DAC.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="keywords" content="virtual audio cable Windows, virtual MIDI cable, driverless audio cable, Microsoft Store audio app, Windows audio routing, Virtual Driverless Hi-Fi Cable, Virtual Driverless MIDI Cables, Virtual Cables from DAC">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Virtual Cable Apps for Windows | Microsoft Store">
+  <meta property="og:description" content="Discover driverless virtual audio and MIDI cable apps for Windows, available directly from Microsoft Store.">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#08111f">
-  <title>Virtual Cables — A different route for Windows audio</title>
+  <title>Virtual Audio & MIDI Cable Apps for Windows | Microsoft Store</title>
   <script type="module" src="https://get.microsoft.com/badge/ms-store-badge.bundled.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Virtual cable apps for Windows",
+    "description": "Virtual audio and MIDI routing applications for Windows available from Microsoft Store and GitHub.",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Virtual Driverless Hi-Fi Cable",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "Windows",
+          "downloadUrl": "https://apps.microsoft.com/detail/9P4Q4F08ZNTJ",
+          "url": "https://apps.microsoft.com/detail/9P4Q4F08ZNTJ"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Virtual Driverless MIDI Cables",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "Windows",
+          "downloadUrl": "https://apps.microsoft.com/detail/9PMBFLKLSWDJ",
+          "url": "https://apps.microsoft.com/detail/9PMBFLKLSWDJ"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareApplication",
+          "name": "Virtual Cables from DAC",
+          "applicationCategory": "MultimediaApplication",
+          "operatingSystem": "Windows",
+          "downloadUrl": "https://apps.microsoft.com/detail/9NMG5K2T4PH5",
+          "url": "https://apps.microsoft.com/detail/9NMG5K2T4PH5"
+        }
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --ink: #f4f8ff;
@@ -96,6 +148,18 @@
     .card p { margin: 0; color: var(--muted); }
     .feature-mark { width: 38px; height: 38px; margin-bottom: 62px; display: grid; place-items: center; color: #08111f; font-weight: 900; background: var(--cyan); border-radius: 10px; }
 
+
+    .app-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 44px; }
+    .app-card { display: flex; flex-direction: column; min-height: 310px; padding: 28px; border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(145deg, rgba(24, 47, 76, .90), rgba(12, 27, 45, .78)); box-shadow: 0 20px 48px rgba(0,0,0,.20); }
+    .app-card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 20px; }
+    .app-type { margin: 0 0 8px; color: var(--green); font-size: .74rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .app-card h3 { margin: 0; font-size: 1.55rem; letter-spacing: -.025em; }
+    .app-symbol { width: 48px; height: 48px; flex: 0 0 auto; display: grid; place-items: center; border: 1px solid rgba(173,205,255,.22); border-radius: 14px; color: var(--cyan); background: rgba(255,255,255,.045); font: 800 1rem/1 ui-monospace, SFMono-Regular, Consolas, monospace; }
+    .app-card p { margin: 18px 0 24px; color: var(--muted); }
+    .app-actions { margin-top: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+    .download-button::before { content: "↓"; margin-right: 9px; font-size: 1.1rem; }
+    .store-placeholder { min-height: 48px; display: inline-flex; align-items: center; padding: 0 14px; border: 1px dashed rgba(173,205,255,.28); border-radius: 10px; color: var(--muted); font-size: .82rem; }
+
     .screens { display: grid; grid-template-columns: 1fr; gap: 34px; margin-top: 42px; align-items: start; }
     figure { margin: 0; }
     .shot { padding: 9px; border: 1px solid var(--line); border-radius: 19px; background: rgba(255,255,255,.04); box-shadow: 0 22px 54px rgba(0,0,0,.25); }
@@ -126,6 +190,7 @@
       .features { grid-template-columns: 1fr 1fr; }
       .card.large { grid-column: 1 / -1; grid-row: auto; min-height: 360px; }
       .screens { grid-template-columns: 1fr; }
+      .app-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 620px) {
@@ -135,7 +200,7 @@
       .hero { padding: 58px 0 44px; }
       h1 { font-size: clamp(3.15rem, 16vw, 4.5rem); }
       section { padding: 62px 0; }
-      .architecture, .features { grid-template-columns: 1fr; }
+      .architecture, .features, .app-grid { grid-template-columns: 1fr; }
       .step:not(:last-child)::after { display: none; }
       .card.large { grid-column: auto; }
       .spec-list li { grid-template-columns: 1fr; gap: 3px; }
@@ -160,6 +225,7 @@
       <div class="nav-links">
         <a href="#difference">Why it’s different</a>
         <a href="#features">Features</a>
+          <a href="#store-apps">Microsoft Store apps</a>
         <a href="#screenshots">Screenshots</a>
         <a href="https://github.com/tarekwasfy01/Virtual-Cables" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="impressum.html">Legal notice</a>
@@ -171,20 +237,17 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div>
-          <p class="eyebrow">A different audio route</p>
-          <h1><span class="gradient">Virtual audio.</span><br>Rewired.</h1>
-          <p class="lead">Create up to 32 independent Windows audio loopback cables as virtual USB Audio Class devices—without building a custom audio kernel driver.</p>
+          <p class="eyebrow">Available in Microsoft Store</p>
+          <h1><span class="gradient">Virtual cable apps</span><br>for Windows.</h1>
+          <p class="lead">Install driverless virtual audio and MIDI routing apps directly from Microsoft Store. Choose Hi-Fi audio, virtual MIDI or DAC-based cable workflows for Windows 10 and Windows 11.</p>
           <div class="actions">
-            <a class="button primary" href="#difference">See how it works</a>
-            <a class="button secondary" href="https://github.com/tarekwasfy01/Virtual-Cables" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-          </div>
-          <div class="store-row">
-            <ms-store-badge productid="9NM06H53PJ7G" window-mode="full" theme="auto" size="large" language="en-us" animation="on"></ms-store-badge>
+            <a class="button primary" href="#store-apps">View Microsoft Store apps</a>
+            <a class="button secondary" href="#github-apps">GitHub alternatives</a>
           </div>
           <div class="quick-facts" aria-label="Product facts">
-            <span class="pill">Up to 32 cables</span>
+            <span class="pill">Microsoft Store apps</span>
             <span class="pill">Windows 10 &amp; 11</span>
-            <span class="pill">48 kHz stereo PCM</span>
+            <span class="pill">Audio &amp; MIDI routing</span>
           </div>
         </div>
         <div class="window-wrap">
@@ -279,6 +342,68 @@
       </div>
     </section>
 
+
+    <section id="apps">
+      <div class="shell">
+        <div id="store-apps">
+          <p class="section-kicker">Microsoft Store collection</p>
+          <h2>Virtual audio and MIDI cable apps for Windows.</h2>
+          <p class="section-intro">Get the primary cable applications directly from Microsoft Store. Store installation provides a familiar Windows download and update experience.</p>
+        </div>
+
+        <div class="app-grid">
+          <article class="app-card">
+            <div class="app-card-top">
+              <div><p class="app-type">Microsoft Store · Driverless Hi-Fi audio</p><h3>Virtual Driverless Hi-Fi Cable</h3></div>
+              <div class="app-symbol" aria-hidden="true">Hi-Fi</div>
+            </div>
+            <p>Virtual Driverless Hi-Fi Cable is a Windows audio-routing app for creating a compatible virtual Hi-Fi connection without distributing a separate custom audio driver. It is designed for recording, streaming, audio transfer and software-to-software routing workflows.</p>
+            <div class="app-actions">
+              <ms-store-badge productid="9p4q4f08zntj" productname="Virtual Driverless Hi-Fi Cable" window-mode="direct" theme="auto" size="large" language="de-de" animation="on"></ms-store-badge>
+              <a class="button secondary" href="https://apps.microsoft.com/detail/9P4Q4F08ZNTJ" target="_blank" rel="noopener noreferrer" aria-label="Open Virtual Driverless Hi-Fi Cable in Microsoft Store">Open Store page</a>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-card-top">
+              <div><p class="app-type">Microsoft Store · Driverless MIDI routing</p><h3>Virtual Driverless MIDI Cables</h3></div>
+              <div class="app-symbol" aria-hidden="true">MIDI</div>
+            </div>
+            <p>Virtual Driverless MIDI Cables connects compatible Windows music applications through virtual MIDI paths. Use it with sequencers, software instruments, controllers, MIDI utilities and development or testing tools.</p>
+            <div class="app-actions">
+              <ms-store-badge productid="9pmbflklswdj" productname="Virtual Driverless MIDI Cables" window-mode="direct" theme="auto" size="large" language="de-de" animation="on"></ms-store-badge>
+              <a class="button secondary" href="https://apps.microsoft.com/detail/9PMBFLKLSWDJ" target="_blank" rel="noopener noreferrer" aria-label="Open Virtual Driverless MIDI Cables in Microsoft Store">Open Store page</a>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-card-top">
+              <div><p class="app-type">Microsoft Store · DAC audio routing</p><h3>Virtual Cables from DAC</h3></div>
+              <div class="app-symbol" aria-hidden="true">DAC</div>
+            </div>
+            <p>Virtual Cables from DAC uses supported DAC-based audio paths for Windows routing scenarios. It provides another way to connect playback and recording workflows through compatible audio hardware and applications.</p>
+            <div class="app-actions">
+              <ms-store-badge productid="9nmg5k2t4ph5" productname="Virtual Cables from DAC" window-mode="direct" theme="auto" size="large" language="de-de" animation="on"></ms-store-badge>
+              <a class="button secondary" href="https://apps.microsoft.com/detail/9NMG5K2T4PH5" target="_blank" rel="noopener noreferrer" aria-label="Open Virtual Cables from DAC in Microsoft Store">Open Store page</a>
+            </div>
+          </article>
+        </div>
+
+        <div id="github-apps" style="margin-top: 72px;">
+          <p class="section-kicker">Additional GitHub downloads</p>
+          <h2 style="font-size: clamp(2rem, 3.5vw, 3.4rem);">Experimental and driver-based cable tools.</h2>
+          <p class="section-intro">These desktop installers are provided separately through GitHub. Virtual Cables itself is currently available only from GitHub and does not have a Microsoft Store badge.</p>
+        </div>
+
+        <div class="app-grid">
+          <article class="app-card"><div class="app-card-top"><div><p class="app-type">GitHub · USB audio loopback</p><h3>Virtual Cables</h3></div><div class="app-symbol" aria-hidden="true">USB</div></div><p>Create multiple virtual USB audio loopback cables for routing playback into recording applications on Windows.</p><div class="app-actions"><a class="button primary download-button" href="https://github.com/tarekwasfy01/Virtual-Cables/releases/download/Virtual-Cables/Virtual_Cables_Setup.exe">Download from GitHub</a></div></article>
+          <article class="app-card"><div class="app-card-top"><div><p class="app-type">GitHub · MIDI routing</p><h3>Virtual MIDI Cables</h3></div><div class="app-symbol" aria-hidden="true">MIDI</div></div><p>Connect MIDI-capable software through virtual MIDI ports for instruments, controllers, sequencers and testing.</p><div class="app-actions"><a class="button primary download-button" href="https://github.com/tarekwasfy01/Virtual-MIDI-Cables/releases/download/Virtual-MIDI-Cables/Virtual-MIDI-Cables-Setup.exe">Download from GitHub</a></div></article>
+          <article class="app-card"><div class="app-card-top"><div><p class="app-type">GitHub · Multichannel audio</p><h3>Virtual Surround Cables</h3></div><div class="app-symbol" aria-hidden="true">7.1</div></div><p>Route multichannel and surround audio between compatible Windows applications using dedicated virtual endpoints.</p><div class="app-actions"><a class="button primary download-button" href="https://github.com/tarekwasfy01/Virtual-Surround-Cables/releases/download/Virtual-Surround-Cables/Virtual-Surround-Cables-Setup.exe">Download from GitHub</a></div></article>
+          <article class="app-card"><div class="app-card-top"><div><p class="app-type">GitHub · Digital S/PDIF routing</p><h3>Virtual Optical Cables</h3></div><div class="app-symbol" aria-hidden="true">OPT</div></div><p>Create virtual optical-style audio paths for digital routing scenarios and compatible S/PDIF workflows.</p><div class="app-actions"><a class="button primary download-button" href="https://github.com/tarekwasfy01/Virtual-Optical-Cables/releases/download/Virtual-Optical-Cables/Virtual.Optical.Cables.Setup.exe">Download from GitHub</a></div></article>
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="shell requirements">
         <div>
@@ -306,7 +431,6 @@
           <h2>A new path between playback and recording.</h2>
           <p>Choose a cable as the output in one application and the matching cable as the input in another. The signal stays on your computer.</p>
           <div class="cta-actions">
-            <ms-store-badge productid="9NM06H53PJ7G" window-mode="full" theme="auto" size="large" language="en-us" animation="on"></ms-store-badge>
             <a class="button secondary" href="https://github.com/tarekwasfy01/Virtual-Cables" target="_blank" rel="noopener noreferrer">Source code on GitHub</a>
           </div>
         </div>
