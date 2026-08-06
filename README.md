@@ -18,6 +18,10 @@ This driver is used: https://github.com/vadimgrn/usbip-win2
 
 https://github.com/tarekwasfy01/Virtual-Cables/releases/download/Virtual-Cables/Virtual_Cables_Setup.exe
 
+<a href="https://get.microsoft.com/installer/download/9nm06h53pj7g?referrer=appbadge" target="_self" >
+	<img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+</a>
+
 ## Screenshot
 <img width="1672" height="941" alt="20304bb4-cba7-4469-8885-7f50a109aebb" src="https://github.com/user-attachments/assets/a2d98d24-f90b-4613-b008-179fd79dc94f" />
 ## How It Works
