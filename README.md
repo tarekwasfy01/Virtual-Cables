@@ -3,6 +3,22 @@
 
 Virtual Cables takes a different approach from traditional virtual audio cable software. Instead of installing a custom audio kernel driver, it creates virtual USB Audio Class devices through USB/IP. Windows can then use its built-in USB audio driver to expose them as standard playback and recording devices.
 This driver is used: https://github.com/vadimgrn/usbip-win2
+
+## Store Version
+
+The Microsoft Store version does feature bitrates of upto 32 bit and 192 kHz. It does use the newer version of the USBIP_Win2 Driver and therefore does not have the memory error bug.
+The paid version runs the audio cables from the same clock, wich does eliminate clock drift.
+Overall I do recomend the newer MS Store Version. 
+
+<a href="https://get.microsoft.com/installer/download/9nm06h53pj7g?referrer=appbadge" target="_self" >
+	<img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
+</a>
+
+If you are able to code or use Chat GPT or other AI you can actually unlock the full potential of the free verison easily. 
+If you use the free versions I do recommend using the optical audio cables, because with S/PDIF the audio stays digital.
+
+https://github.com/tarekwasfy01/Virtual-Optical-Cables
+
 ## Features
 
 - Create up to 32 independent virtual audio cables
