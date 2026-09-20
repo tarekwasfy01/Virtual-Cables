@@ -13,7 +13,11 @@ Overall I do recomend the newer MS Store Version.
 <a href="https://get.microsoft.com/installer/download/9nm06h53pj7g?referrer=appbadge" target="_self" >
 	<img src="https://get.microsoft.com/images/en-us%20dark.svg" width="200"/>
 </a>
+<a href="https://snapcraft.io/virtual-cables">
+    <img alt="Get it from the Snap Store" src=https://snapcraft.io/en/dark/install.svg />
+  </a>
 
+  
 If you are able to code or use Chat GPT or other AI you can actually unlock the full potential of the free verison easily. 
 If you use the free versions I do recommend using the optical audio cables, because with S/PDIF the audio stays digital.
 
